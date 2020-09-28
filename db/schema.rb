@@ -23,10 +23,12 @@ ActiveRecord::Schema.define(version: 6) do
     t.string  "listing_type"
     t.integer "price"
     t.integer "host_id"
+    t.integer "neighborhood_id"
   end
 
   create_table "neighborhoods", force: :cascade do |t|
-    t.string "name"
+    t.string  "name"
+    t.integer "city_id"
   end
 
   create_table "reservations", force: :cascade do |t|
