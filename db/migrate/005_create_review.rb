@@ -1,4 +1,4 @@
-class CreateReview < ActiveRecord::Migration[4.2]
+class CreateReview < ActiveRecord::Migration[5.0]
   def change
     create_table :reviews do |t|
       t.string :description
