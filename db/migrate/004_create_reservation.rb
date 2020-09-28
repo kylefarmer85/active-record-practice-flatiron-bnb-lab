@@ -1,4 +1,4 @@
-class CreateReservations < ActiveRecord::Migration[5.2]
+class CreateReservation < ActiveRecord::Migration[4.2]
   def change
     create_table :reservations do |t|
       t.datetime :checkin
